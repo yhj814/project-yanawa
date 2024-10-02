@@ -78,6 +78,7 @@ function kakaoLogin() {
     //kakaoService.getKakaoAccessToken에서 받아온것
     const responseType = 'code';
 
+    // 카카오 로그인을 위한 코드
     const afterKakaoLoginMyPage = `https://kauth.kakao.com/oauth/authorize?client_id=${clientId}&redirect_uri=${encodeURIComponent(redirectUri)}&response_type=${responseType}`;
 
     // 카카오 로그인후에 마이페이지로 이동
